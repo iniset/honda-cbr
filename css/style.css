@@ -1,0 +1,210 @@
+/* Import Googe fonts Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/*****************************
+        Common Styles
+******************************/
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-padding {
+  padding: 100px 0 0px 0;
+}
+
+h2 {
+  color: #0d0925;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+}
+p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+.sub-header {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #e76f51;
+}
+.sub-header::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 8px auto 0;
+  background-color: #e76f51;
+}
+.heading-special {
+  color: #e76f51;
+}
+.special-bg {
+  background-color: #e76f51;
+  border: 1px solid #e76f51;
+}
+
+/*****************************
+        Headder Area
+******************************/
+
+.headder-area {
+  background-color: #264653;
+  color: #fff;
+  padding-bottom: 100px;
+}
+.promo-content {
+  padding-top: 135px;
+}
+.promo-content p:first-child {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.promo-content h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #ffffff;
+}
+.promo-content p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.btn-custom {
+  background: #e76f51;
+  padding: 8px 40px;
+  color: #fff;
+  margin-top: 15px;
+  transition: transform 0.5s ease;
+}
+.btn-custom:hover {
+  background: #e2522e;
+  color: #fff;
+}
+
+/*****************************
+        Featured Area
+******************************/
+
+.gray-scale img {
+  filter: grayscale(100%);
+  transition: transform 0.5s ease;
+}
+.gray-scale img:hover {
+  filter: grayscale(0);
+}
+
+/*****************************
+        Client Area
+******************************/
+
+.designation {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #23a6f0;
+  margin-bottom: 12px;
+}
+
+.client-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+/*****************************
+        FAQ Area
+******************************/
+button.accordion-button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #383838;
+}
+.accordion-button:not(.collapsed) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #383838;
+}
+.accordion-body {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #7e848c;
+}
+
+/*****************************
+        Footer Area
+******************************/
+.bg-footer {
+  background-color: #264653;
+  color: #fff;
+}
+
+/*****************************
+        Media Query
+******************************/
+@media (max-width: 576px) {
+  .promo-content h2 {
+    font-size: 25px;
+    line-height: 55px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 55px;
+  }
+
+  .map-area {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+  }
+  .map-area > * {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
